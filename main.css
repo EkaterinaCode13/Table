@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+}
+
+table {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: solid 1px;
+}
+
+td {
+    text-align: right;
+}
+
+td:first-of-type {
+    text-align: left;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+#oct-nov {
+    border: solid 3px cadetblue;
+}
+
+td:nth-last-of-type(2), td:nth-last-of-type(3), td:nth-last-of-type(4) {
+  font-style: italic;
+}
+
+.highlighted {
+    background-color: #ffffa0 !important;
+}
+
+/*
+tbody > tr:nth-of-type(1) > td:nth-of-type(2) {
+    background-color: red;
+}
+*/
+
+tbody tr:nth-of-type(even) {
+  background-color: gainsboro;
+}
+
+form {
+    padding-top: 25px;
+    text-align: center;
+}
+
+form div {
+    display: inline-block;
+    margin-right: 25px;
+    vertical-align: bottom;
+}
+
+form div:first-of-type {
+    margin-left: 25px;
+}
+
+select {
+    margin-top: 5px;
+    width: 105px;
+}
+
+input[type=text] {
+    margin-top: 5px;
+    width: 105px;
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+label[for=number] {
+    position: relative;
+    top: 2px;
+}
+
+input #save:active {
+    background-color: #D3D3D3;
+}
+
+input #save:disabled {
+    background-color: #F5F5F5;
+}
+
+/*
+
+tr:nth-of-type(7) {
+    background-color: #ffffa0;
+}
+*/

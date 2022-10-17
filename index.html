@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Table</title>
+        <link rel="stylesheet" href="main.css" />
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="jquery.inputmask.js"></script>
+    </head>
+    <body>
+        <form action="">
+            <div>
+                <label for="name">Наименование:</label>
+                <select id="name" name="name">
+                    <option value="0"></option>
+                </select>
+            </div>
+            <div>
+                <label for="month">Месяц:</label>
+                <select id="month" name="month">
+                    <option value="0"></option>
+                    <option value="1">Январь</option>
+                    <option value="2">Февраль</option>
+                    <option value="3">Март</option>
+                    <option value="4">Апрель</option>
+                    <option value="5">Май</option>
+                    <option value="6">Июнь</option>
+                    <option value="7">Июль</option>
+                    <option value="8">Август</option>
+                    `
+                    <option value="9">Сентябрь</option>
+                    <option value="10">Октябрь</option>
+                    <option value="11">Ноябрь</option>
+                    <option value="12">Декабрь</option>
+                </select>
+            </div>
+            <div>
+                <label for="number">Значение:</label>
+                <input type="text" id="number" />
+            </div>
+            <div>
+                <input id="save" type="button" value="Сохранить" disabled />
+                <input id="delete" type="reset" value="Очистить" />
+            </div>
+        </form>
+
+        <table>
+            <colgroup span="10"></colgroup>
+            <colgroup span="3" id="oct-nov"></colgroup>
+            <thead>
+                <tr>
+                    <th rowspan="2">Наименование</th>
+                    <th colspan="3">Квартал I</th>
+                    <th colspan="3">Квартал II</th>
+                    <th colspan="3">Квартал III</th>
+                    <th colspan="3">Квартал IV</th>
+                    <th rowspan="2">Всего</th>
+                </tr>
+                <tr>
+                    <th>Янв</th>
+                    <th>Фев</th>
+                    <th>Мар</th>
+                    <th>Апр</th>
+                    <th>Май</th>
+                    <th>Июн</th>
+                    <th>Июл</th>
+                    <th>Авг</th>
+                    <th>Сен</th>
+                    <th>Окт</th>
+                    <th>Ноя</th>
+                    <th>Дек</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <td>Итого</td>
+                    <td>10.00</td>
+                    <td>10.00</td>
+                    <td>10.00</td>
+                    <td>10.00</td>
+                    <td>10.00</td>
+                    <td>10.00</td>
+                    <td>10.00</td>
+                    <td>10.00</td>
+                    <td>10.00</td>
+                    <td>10.00</td>
+                    <td>10.00</td>
+                    <td>10.00</td>
+                    <td>120.00</td>
+                </tr>
+            </tfoot>
+        </table>
+        <script src="main.js"></script>
+    </body>
+</html>
